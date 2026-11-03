@@ -26,7 +26,10 @@ gh auth status
 
 ## 저장소 clone
 
+각 인스턴스의 영구 storage는 `/data`에 마운트되어 있으므로, 먼저 해당 디렉토리로 이동한 뒤 clone합니다.
+
 ```bash
+cd /data
 git clone https://github.com/pai-smheo/instance-test.git
 cd instance-test
 ```
