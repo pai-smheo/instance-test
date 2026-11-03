@@ -1,0 +1,48 @@
+/* Keep command examples readable on screens with reduced contrast. */
+.code-block {
+  border-color: #c8d7ce;
+  background: #edf3ee;
+  color: #183b32;
+}
+
+.code-block code {
+  color: #183b32;
+}
+
+.code-block button {
+  border-color: #b4c9bc;
+  background: #fff;
+  color: #315e4a;
+}
+
+.mentor-callout {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 9px;
+  padding: 16px 17px;
+  border: 2px solid #d99b45;
+  border-left-width: 6px;
+  border-radius: 7px;
+  background: #fff2d7;
+  color: #4d3518;
+}
+
+.mentor-callout > span {
+  color: #9b5b19;
+  font: 500 9px var(--mono);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.mentor-callout > strong {
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.8;
+  letter-spacing: -.02em;
+}
+
+@media (max-width: 700px) {
+  .mentor-callout { padding: 14px; }
+  .mentor-callout > strong { font-size: 12px; }
+}

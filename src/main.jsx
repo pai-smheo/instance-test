@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './style.css'
+import './guide-overrides.css'
 
 const docs = 'https://devopen.jntp-ax.or.kr/docs/'
 
@@ -171,6 +172,7 @@ function App() {
                 <div className="port-flow"><div><span>1</span><b>인스턴스 탭</b><small>대상 서버 선택</small></div><i>→</i><div><span>2</span><b>네트워크</b><small>상세정보에서 열기</small></div><i>→</i><div><span>3</span><b>수정</b><small>포트 추가 선택</small></div><i>→</i><div><span>4</span><b>저장</b><small>변경 사항 적용</small></div></div>
                 <div className="port-settings"><div className="setting-row"><span>앱 포트</span><b>3000</b><small>실행 중인 앱의 포트 번호</small></div><div className="setting-row"><span>유형</span><b>HTTP</b><small>웹 페이지는 HTTP 선택</small></div><div className="setting-row setting-highlight"><span>외부 접근</span><b><i /> 사용</b><small>도메인 입력 시 HTTPS 인증서 자동 적용</small></div></div>
                 <div className="alert-box"><span>i</span><p>TCP 앱은 TCP 유형을 선택하세요. 외부 TCP 연결은 클라이언트에서 SSL Mode를 <code>require</code>로 설정해야 합니다.</p></div>
+                <div className="mentor-callout"><span>추가 포트 개방 안내</span><strong>Streamlit용 8501 포트는 모두 개방되어 있습니다. 다른 애플리케이션에 추가 포트 개방이 필요하면 허성민 멘토에게 요청하고, 부여된 도메인을 전달받으세요.</strong></div>
                 <div className="card-footnote"><span>✓</span> 웹 주소는 Devstream에 설정한 도메인과 포트 경로로 접속합니다.</div>
               </article>
             </div>
