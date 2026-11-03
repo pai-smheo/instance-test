@@ -10,6 +10,8 @@ Git과 GitHub CLI(`gh`)를 설치합니다.
 sudo apt install -y git gh
 ```
 
+저장소를 clone하려면 해당 GitHub 저장소가 **공개(public)** 상태여야 합니다. 비공개 저장소를 사용하려면 계정에 접근 권한이 있고 GitHub 인증이 올바르게 설정되어 있어야 합니다.
+
 ## GitHub 인증
 
 ```bash
