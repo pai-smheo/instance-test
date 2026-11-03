@@ -1,6 +1,6 @@
 # instance-test
 
-인스턴스 테스트용 React 앱입니다. 앱은 `/i/zYusWVViM9PWkQEw/` 경로를 base URL로 사용합니다.
+Devstream 인스턴스에 SSH로 접속해 Codex와 GitHub를 연결하고, 앱 포트를 여는 방법을 안내하는 React 매뉴얼입니다. 앱은 `/i/zYusWVViM9PWkQEw/` 경로를 base URL로 사용합니다.
 
 ## 실행
 
