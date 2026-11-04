@@ -42,6 +42,7 @@ function App() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Devstream 시작"><span className="brand-mark"><i /><i /><i /></span>devstream<span className="brand-guide">FIELD MANUAL</span></a>
         <nav aria-label="페이지 목차">
+          <a href="#about">Devstream 소개</a>
           <a href="#connect">SSH 접속</a>
           <a href="#codex">Codex 연결</a>
           <a href="#github">GitHub 연동</a>
@@ -76,6 +77,30 @@ function App() {
             <div className="art-ring ring-one" /><div className="art-ring ring-two" />
           </div>
           <div className="hero-bottom"><span>01 — CONNECT</span><span>02 — BUILD</span><span>03 — SHARE</span><span>04 — PUBLISH</span><div className="hero-progress"><i /></div></div>
+        </section>
+
+        <section id="about" className="about-section">
+          <div className="section-wrap">
+            <div className="about-heading">
+              <div className="about-copy">
+                <div className="about-kicker"><span /> WHY DEVSTREAM</div>
+                <h2>AI 아이디어를,<br /><em>인프라 기다림 없이</em> 시작하세요.</h2>
+              </div>
+              <p>GPU 서버를 기다리고, 개발 환경을 하나씩 설치하고, 팀원과 데이터를 주고받는 일. Devstream은 이런 준비를 한곳에서 쉽게 처리해 연구와 서비스 개발에 더 빨리 집중하도록 돕습니다.</p>
+            </div>
+            <div className="about-flow" aria-label="기존 개발 준비 흐름과 Devstream 흐름 비교">
+              <div className="about-old"><span>늘 반복되던 준비</span><b>서버 요청 <i>→</i> 환경 설정 <i>→</i> 도구 연결</b><small>필요한 작업을 시작하기까지 여러 단계를 거쳐요.</small></div>
+              <div className="about-flow-arrow">→</div>
+              <div className="about-new"><span>Devstream에서</span><b>필요한 환경을 선택하고 바로 시작</b><small>복잡한 인프라 설정은 플랫폼이 맡고, 팀은 할 일에 집중해요.</small></div>
+            </div>
+            <div className="about-cards">
+              <article className="about-card"><span className="about-card-no">01 / START</span><div className="about-icon icon-template">▦</div><h3>준비된 환경으로 시작</h3><p>운영체제부터 Jupyter 같은 도구까지, 용도에 맞는 템플릿을 골라 빠르게 작업을 시작합니다.</p><div className="about-tags"><span>CUDA</span><span>PyTorch</span><span>Jupyter</span></div></article>
+              <article className="about-card"><span className="about-card-no">02 / COMPUTE</span><div className="about-icon icon-compute">◉</div><h3>필요한 컴퓨팅 자원 사용</h3><p>데이터 처리에는 CPU, 모델 학습에는 GPU처럼 작업에 알맞은 자원을 이용합니다.</p><div className="about-tags"><span>CPU</span><span>GPU</span><span>클라우드 연동</span></div></article>
+              <article className="about-card"><span className="about-card-no">03 / CONTINUE</span><div className="about-icon icon-save">↻</div><h3>환경을 저장하고 다시 사용</h3><p>개발 환경을 커밋으로 저장해 두면, 다시 설정하는 수고를 줄이고 이어서 작업할 수 있습니다.</p><div className="about-tags"><span>환경 저장</span><span>복원</span></div></article>
+              <article className="about-card"><span className="about-card-no">04 / SHARE</span><div className="about-icon icon-share">⌁</div><h3>팀과 데이터와 도구 공유</h3><p>공유 스토리지와 간편한 네트워크 설정으로 데이터와 TensorBoard·Gradio 같은 도구를 함께 씁니다.</p><div className="about-tags"><span>공유 스토리지</span><span>도구 연결</span></div></article>
+            </div>
+            <div className="about-note"><span>쉽게 말해</span><p>Devstream은 AI 개발을 위한 <strong>공용 작업 공간</strong>입니다. 필요한 서버와 도구를 준비하는 일을 간단하게 만들어, 개발자는 실험과 아이디어 구현에 더 많은 시간을 쓸 수 있습니다.</p><a href={`${docs}get-started/introduction/`} target="_blank" rel="noreferrer">소개 문서 보기 ↗</a></div>
+          </div>
         </section>
 
         <section className="prep section-wrap">
@@ -173,7 +198,7 @@ function App() {
                 <div className="port-flow"><div><span>1</span><b>인스턴스 확인</b><small>이름 또는 ID</small></div><i>→</i><div><span>2</span><b>포트 전달</b><small>예: 3000</small></div><i>→</i><div><span>3</span><b>도메인 받기</b><small>허성민 멘토에게</small></div><i>→</i><div><span>4</span><b>앱에 연결</b><small>도메인 + base URL</small></div></div>
                 <div className="request-grid"><div><span>요청할 인스턴스</span><b>인스턴스 이름 또는 ID</b></div><div><span>개방할 포트</span><b>앱이 사용하는 번호</b></div><div><span>함께 알려주면 좋아요</span><b>앱 이름과 사용 목적</b></div></div>
                 <div className="mentor-callout"><span>추가 포트 개방 안내</span><strong>추가 포트가 필요하면 허성민 멘토에게 어느 인스턴스의 어느 포트를 열어야 하는지 전달하세요. 멘토에게 도메인을 받은 뒤 앱의 base URL로 연결하면 됩니다.</strong></div>
-                <div className="base-url-note"><b>base URL(하위 경로) 설정을 지원하는 프레임워크 예시</b><p>앱에서 base URL을 지정할 수 있으면, 허성민 멘토에게 받은 도메인의 하위 경로로 연결해 사용할 수 있습니다.</p><div className="base-examples"><a href="https://docs.streamlit.io/develop/api-reference/configuration/config.toml" target="_blank" rel="noreferrer"><b>Streamlit</b><code>server.baseUrlPath</code><span>공식 문서 ↗</span></a><a href="https://gradio.app/main/docs/gradio/interface" target="_blank" rel="noreferrer"><b>Gradio</b><code>root_path</code><span>공식 문서 ↗</span></a><a href="https://vite.dev/config/shared-options#base" target="_blank" rel="noreferrer"><b>Vite</b><code>base</code><span>공식 문서 ↗</span></a><a href="https://fastapi.tiangolo.com/advanced/behind-a-proxy/" target="_blank" rel="noreferrer"><b>FastAPI</b><code>--root-path</code><span>공식 문서 ↗</span></a></div></div>
+                <div className="base-url-note"><b>base URL(하위 경로) 설정을 지원하는 프레임워크 예시</b><p>앱에서 base URL을 지정할 수 있으면, 허성민 멘토에게 받은 도메인의 하위 경로로 연결해 사용할 수 있습니다.</p><div className="base-examples"><a href="https://docs.streamlit.io/develop/api-reference/configuration/config.toml" target="_blank" rel="noreferrer"><b>Streamlit</b><code>server.baseUrlPath</code><span>공식 문서 ↗</span></a><a href="https://gradio.app/main/docs/gradio/interface" target="_blank" rel="noreferrer"><b>Gradio</b><code>root_path</code><span>공식 문서 ↗</span></a><a href="https://vite.dev/config/shared-options#base" target="_blank" rel="noreferrer"><b>Vite</b><code>base</code><span>공식 문서 ↗</span></a><a href="https://fastapi.tiangolo.com/advanced/behind-a-proxy/" target="_blank" rel="noreferrer"><b>FastAPI</b><code>--root-path</code><span>공식 문서 ↗</span></a></div><div className="current-site-example"><span className="current-site-label">현재 이 사이트의 실제 설정 · 포트 3000</span><a href="https://devopen.jntp-ax.or.kr/i/zYusWVViM9PWkQEw/" target="_blank" rel="noreferrer">https://devopen.jntp-ax.or.kr/i/zYusWVViM9PWkQEw/ <span>↗</span></a><div><small>도메인</small><code>devopen.jntp-ax.or.kr</code><small>base path</small><code>/i/zYusWVViM9PWkQEw/</code></div><pre>Vite 설정: base: '/i/zYusWVViM9PWkQEw/'</pre></div></div>
                 <div className="card-footnote"><span>✓</span> 포트 개방은 멘토에게 요청하고, 받은 도메인을 앱 설정에 연결합니다.</div>
               </article>
             </div>
