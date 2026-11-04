@@ -323,7 +323,7 @@ body { color: var(--pai-color-fg-default); background: var(--pai-color-bg-canvas
 .step-line strong { color: var(--pai-color-fg-default); }
 .step-line code, .instruction-body code, .app-steps code, .card-footnote code, .plain-note code, .port-settings code, .alert-box code { font-size: 12px; }
 .code-block { gap: 16px; min-height: 48px; border-radius: var(--pai-radius-md); border-color: var(--pai-color-border-strong); background: #212121; color: #fff; }
-.code-block code { color: #fff; font-size: 14px; }
+.code-block code { background: transparent; color: #fff; font-size: 14px; }
 .code-block button { min-width: 56px; border-color: #606166; border-radius: var(--pai-radius-sm); color: #1a1a1a; font-size: 12px; }
 .code-block button:hover { border-color: var(--pai-color-accent-fill); background: var(--pai-color-accent-fill); color: #fff; }
 .inline-terminal { border-radius: var(--pai-radius-md); background: #212121; color: #fff; font-size: 12px; }
