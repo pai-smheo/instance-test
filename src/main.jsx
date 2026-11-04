@@ -42,7 +42,6 @@ function App() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Devstream 시작"><span className="brand-mark"><i /><i /><i /></span>devstream<span className="brand-guide">FIELD MANUAL</span></a>
         <nav aria-label="페이지 목차">
-          <a href="#about">Devstream 소개</a>
           <a href="#connect">SSH 접속</a>
           <a href="#codex">Codex 연결</a>
           <a href="#github">GitHub 연동</a>
@@ -76,30 +75,6 @@ function App() {
             <div className="art-ring ring-one" /><div className="art-ring ring-two" />
           </div>
           <div className="hero-bottom"><span>01 — CONNECT</span><span>02 — BUILD</span><span>03 — SHARE</span><span>04 — PUBLISH</span><div className="hero-progress"><i /></div></div>
-        </section>
-
-        <section id="about" className="about-section">
-          <div className="section-wrap">
-            <div className="about-heading">
-              <div className="about-copy">
-                <div className="about-kicker"><span /> WHY DEVSTREAM</div>
-                <h2>AI 아이디어를,<br /><em>인프라 기다림 없이</em> 시작하세요.</h2>
-              </div>
-              <p>GPU 서버를 기다리고, 개발 환경을 하나씩 설치하고, 팀원과 데이터를 주고받는 일. Devstream은 이런 준비를 한곳에서 쉽게 처리해 연구와 서비스 개발에 더 빨리 집중하도록 돕습니다.</p>
-            </div>
-            <div className="about-flow" aria-label="기존 개발 준비 흐름과 Devstream 흐름 비교">
-              <div className="about-old"><span>늘 반복되던 준비</span><b>서버 요청 <i>→</i> 환경 설정 <i>→</i> 도구 연결</b><small>필요한 작업을 시작하기까지 여러 단계를 거쳐요.</small></div>
-              <div className="about-flow-arrow">→</div>
-              <div className="about-new"><span>Devstream에서</span><b>필요한 환경을 선택하고 바로 시작</b><small>복잡한 인프라 설정은 플랫폼이 맡고, 팀은 할 일에 집중해요.</small></div>
-            </div>
-            <div className="about-cards">
-              <article className="about-card"><span className="about-card-no">01 / START</span><div className="about-icon icon-template">▦</div><h3>준비된 환경으로 시작</h3><p>운영체제부터 Jupyter 같은 도구까지, 용도에 맞는 템플릿을 골라 빠르게 작업을 시작합니다.</p><div className="about-tags"><span>CUDA</span><span>PyTorch</span><span>Jupyter</span></div></article>
-              <article className="about-card"><span className="about-card-no">02 / COMPUTE</span><div className="about-icon icon-compute">◉</div><h3>필요한 컴퓨팅 자원 사용</h3><p>데이터 처리에는 CPU, 모델 학습에는 GPU처럼 작업에 알맞은 자원을 이용합니다.</p><div className="about-tags"><span>CPU</span><span>GPU</span><span>클라우드 연동</span></div></article>
-              <article className="about-card"><span className="about-card-no">03 / CONTINUE</span><div className="about-icon icon-save">↻</div><h3>환경을 저장하고 다시 사용</h3><p>개발 환경을 커밋으로 저장해 두면, 다시 설정하는 수고를 줄이고 이어서 작업할 수 있습니다.</p><div className="about-tags"><span>환경 저장</span><span>복원</span></div></article>
-              <article className="about-card"><span className="about-card-no">04 / SHARE</span><div className="about-icon icon-share">⌁</div><h3>팀과 데이터와 도구 공유</h3><p>공유 스토리지와 간편한 네트워크 설정으로 데이터와 TensorBoard·Gradio 같은 도구를 함께 씁니다.</p><div className="about-tags"><span>공유 스토리지</span><span>도구 연결</span></div></article>
-            </div>
-            <div className="about-note"><span>쉽게 말해</span><p>Devstream은 AI 개발을 위한 <strong>공용 작업 공간</strong>입니다. 필요한 서버와 도구를 준비하는 일을 간단하게 만들어, 개발자는 실험과 아이디어 구현에 더 많은 시간을 쓸 수 있습니다.</p><a href={`${docs}get-started/introduction/`} target="_blank" rel="noreferrer">소개 문서 보기 ↗</a></div>
-          </div>
         </section>
 
         <section className="prep section-wrap">
