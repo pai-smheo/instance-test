@@ -48,7 +48,6 @@ function App() {
           <a href="#github">GitHub 연동</a>
           <a href="#ports">포트 개방</a>
         </nav>
-        <a className="header-link" href={docs} target="_blank" rel="noreferrer">Devstream 문서 <span>↗</span></a>
       </header>
 
       <main id="top">
