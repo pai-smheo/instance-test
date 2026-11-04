@@ -161,19 +161,20 @@ function App() {
 
         <section id="ports" className="guide-section port-section">
           <div className="section-wrap guide-grid">
-            <div className="guide-aside"><SectionTitle number="04" label="NETWORK" title="웹 앱 포트를 열어 공개해요" text="서버에서 실행한 앱을 브라우저로 보려면, 앱 포트에 외부 접근 경로를 연결해야 합니다." /><div className="aside-note port-note"><span>먼저 확인</span><p>앱이 서버 외부에서도 접속할 수 있도록 <code>0.0.0.0</code>에 바인딩되어야 합니다.</p></div><a className="docs-link" href={`${docs}user-guide/modify-instance/`} target="_blank" rel="noreferrer">공식 문서: 인스턴스 네트워크 수정 <span>↗</span></a></div>
+            <div className="guide-aside"><SectionTitle number="04" label="NETWORK" title="포트를 요청하고 도메인으로 연결해요" text="Streamlit은 기본 포트로 바로 사용하고, 다른 앱에 포트가 더 필요하면 멘토에게 요청하세요." /><div className="aside-note port-note"><span>앱 실행 전 확인</span><p>앱 서버가 <code>0.0.0.0</code>에 바인딩되어야 외부 요청을 받을 수 있습니다.</p></div><a className="docs-link" href={`${docs}user-guide/create-instance/`} target="_blank" rel="noreferrer">공식 문서: 네트워크 옵션 <span>↗</span></a></div>
             <div className="guide-content">
               <article className="instruction-card port-card">
-                <div className="instruction-heading"><span className="step-badge step-orange">01</span><div><h3>먼저 앱이 사용하는 포트 확인</h3><p>예: 개발 서버를 3000 포트로 실행했다면 3000을 엽니다.</p></div></div>
-                <div className="port-console"><div><span className="console-dot" /><span className="console-dot" /><span className="console-dot" /><small>앱 서버</small></div><p><b>Listening on</b><strong>0.0.0.0:3000</strong></p><span className="console-foot">외부 요청을 받을 준비가 된 상태</span></div>
+                <div className="instruction-heading"><span className="step-badge step-orange">01</span><div><h3>Streamlit은 8501 포트를 사용해요</h3><p>Streamlit용 8501 포트는 모든 인스턴스에서 개방되어 있습니다.</p></div><span className="open-label">OPEN</span></div>
+                <div className="port-console"><div><span className="console-dot" /><span className="console-dot" /><span className="console-dot" /><small>기본 개방 포트</small></div><p><b>Streamlit</b><strong>0.0.0.0:8501</strong></p><span className="console-foot">별도 포트 개방 요청 없이 사용할 수 있습니다.</span></div>
               </article>
               <article className="instruction-card port-card">
-                <div className="instruction-heading"><span className="step-badge step-orange">02</span><div><h3>Devstream에서 네트워크 추가</h3><p>실행 중인 인스턴스도 네트워크 설정을 수정할 수 있습니다.</p></div></div>
-                <div className="port-flow"><div><span>1</span><b>인스턴스 탭</b><small>대상 서버 선택</small></div><i>→</i><div><span>2</span><b>네트워크</b><small>상세정보에서 열기</small></div><i>→</i><div><span>3</span><b>수정</b><small>포트 추가 선택</small></div><i>→</i><div><span>4</span><b>저장</b><small>변경 사항 적용</small></div></div>
-                <div className="port-settings"><div className="setting-row"><span>앱 포트</span><b>3000</b><small>실행 중인 앱의 포트 번호</small></div><div className="setting-row"><span>유형</span><b>HTTP</b><small>웹 페이지는 HTTP 선택</small></div><div className="setting-row setting-highlight"><span>외부 접근</span><b><i /> 사용</b><small>도메인 입력 시 HTTPS 인증서 자동 적용</small></div></div>
-                <div className="alert-box"><span>i</span><p>TCP 앱은 TCP 유형을 선택하세요. 외부 TCP 연결은 클라이언트에서 SSL Mode를 <code>require</code>로 설정해야 합니다.</p></div>
-                <div className="mentor-callout"><span>추가 포트 개방 안내</span><strong>Streamlit용 8501 포트는 모두 개방되어 있습니다. 다른 애플리케이션에 추가 포트 개방이 필요하면 허성민 멘토에게 요청하고, 부여된 도메인을 전달받으세요.</strong></div>
-                <div className="card-footnote"><span>✓</span> 웹 주소는 Devstream에 설정한 도메인과 포트 경로로 접속합니다.</div>
+                <div className="instruction-heading"><span className="step-badge step-orange">02</span><div><h3>다른 앱은 허성민 멘토에게 요청</h3><p>포트를 직접 추가하지 말고, 필요한 정보를 멘토에게 전달하세요.</p></div></div>
+                <div className="port-flow"><div><span>1</span><b>인스턴스 확인</b><small>이름 또는 ID</small></div><i>→</i><div><span>2</span><b>포트 전달</b><small>예: 3000</small></div><i>→</i><div><span>3</span><b>도메인 받기</b><small>허성민 멘토에게</small></div><i>→</i><div><span>4</span><b>앱에 연결</b><small>도메인 + base URL</small></div></div>
+                <div className="request-grid"><div><span>요청할 인스턴스</span><b>인스턴스 이름 또는 ID</b></div><div><span>개방할 포트</span><b>앱이 사용하는 번호</b></div><div><span>함께 알려주면 좋아요</span><b>앱 이름 · HTTP 또는 TCP</b></div></div>
+                <div className="mentor-callout"><span>추가 포트 개방 안내</span><strong>추가 포트가 필요하면 허성민 멘토에게 어느 인스턴스의 어느 포트를 열어야 하는지 전달하세요. 멘토에게 도메인을 받은 뒤 앱의 base URL로 연결하면 됩니다.</strong></div>
+                <div className="base-url-note"><b>앱이 base URL을 지원한다면 사용할 수 있어요</b><p>앱 설정에서 base URL 또는 경로 기반 접속을 지정할 수 있으면, 전달받은 도메인의 base URL 경로로 연결해 접속하세요. 이 방식을 지원하지 않는 앱은 앱별 접속 방법을 확인해 주세요.</p></div>
+                <div className="alert-box"><span>i</span><p>TCP 앱의 포트 개방이 필요하다면 요청할 때 TCP 방식이라고 알려주세요. 외부 TCP 연결은 클라이언트에서 SSL Mode를 <code>require</code>로 설정해야 합니다.</p></div>
+                <div className="card-footnote"><span>✓</span> 포트 개방은 멘토에게 요청하고, 받은 도메인을 앱 설정에 연결합니다.</div>
               </article>
             </div>
           </div>
