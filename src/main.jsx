@@ -40,7 +40,7 @@ function App() {
   return (
     <>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Devstream 시작"><span className="brand-mark"><i /><i /><i /></span>devstream<span className="brand-guide">FIELD GUIDE</span></a>
+        <a className="brand" href="#top" aria-label="Devstream 시작"><span className="brand-mark"><i /><i /><i /></span>devstream<span className="brand-guide">FIELD MANUAL</span></a>
         <nav aria-label="페이지 목차">
           <a href="#connect">SSH 접속</a>
           <a href="#codex">Codex 연결</a>
