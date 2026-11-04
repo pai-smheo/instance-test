@@ -76,6 +76,8 @@ function App() {
           <p>이 웹은 Devstream 인스턴스에서 Codex와 함께 제작했습니다. 코드는 <a href="https://github.com/pai-smheo/instance-test" target="_blank" rel="noreferrer">GitHub 저장소</a>에서 확인하실 수 있습니다.</p>
         </section>
 
+        <div className="training-resource section-wrap"><a href={`${import.meta.env.BASE_URL}devstream-ssh.html`} target="_blank" rel="noreferrer">해커톤 참여자 Devstream 교육 자료 보기</a></div>
+
         <section className="prep section-wrap">
           <div className="prep-heading"><h2>접속 전 준비 항목</h2></div>
           <div className="prep-items">
@@ -122,7 +124,7 @@ function App() {
               </article>
               <article className="instruction-card codex-card">
                 <div className="instruction-heading"><span className="step-badge step-violet">02</span><div><h3>기기 코드로 로그인</h3><p>서버에 브라우저가 없어도 기기 코드 방식으로 로그인할 수 있습니다.</p></div><span className="time-label">코드 15분 유효</span></div>
-                <div className="instruction-body"><p className="step-line"><b>·</b> 명령 실행 전에 ChatGPT 웹의 <strong>보안 및 로그인 &gt; 앱 보안 &gt; 기기 코드 로그인 활성화</strong>를 켜 주세요.</p><CopyCode>codex login --device-auth</CopyCode><div className="device-flow"><div><span>1</span><b>서버 터미널</b><small>안내 URL과 9자리 코드 확인</small></div><i>→</i><div><span>2</span><b>사용 중인 브라우저</b><small>URL을 열고 동일한 ChatGPT 계정으로 로그인</small></div><i>→</i><div><span>3</span><b>코드 입력</b><small>코드를 입력하고 로그인 완료 확인</small></div></div><div className="alert-box"><span>!</span><p>로그인 코드는 15분 후 만료됩니다. 인증 코드는 타인과 공유하지 않도록 유의해 주세요. 만료된 경우 위 명령을 다시 실행해 주세요.</p></div></div>
+                <div className="instruction-body"><img className="device-auth-image" src={`${import.meta.env.BASE_URL}codex-connect.png`} alt="ChatGPT 웹 앱 보안에서 기기 코드 로그인 활성화 설정" /><p className="step-line"><b>·</b> 명령 실행 전에 ChatGPT 웹의 <strong>보안 및 로그인 &gt; 앱 보안 &gt; 기기 코드 로그인 활성화</strong>를 켜 주세요.</p><CopyCode>codex login --device-auth</CopyCode><div className="device-flow"><div><span>1</span><b>서버 터미널</b><small>안내 URL과 9자리 코드 확인</small></div><i>→</i><div><span>2</span><b>사용 중인 브라우저</b><small>URL을 열고 동일한 ChatGPT 계정으로 로그인</small></div><i>→</i><div><span>3</span><b>코드 입력</b><small>코드를 입력하고 로그인 완료 확인</small></div></div><div className="alert-box"><span>!</span><p>로그인 코드는 15분 후 만료됩니다. 인증 코드는 타인과 공유하지 않도록 유의해 주세요. 만료된 경우 위 명령을 다시 실행해 주세요.</p></div></div>
               </article>
               <article className="instruction-card app-card">
                 <div className="instruction-heading"><span className="step-badge step-blue">03</span><div><h3>ChatGPT 앱에서 SSH 서버 추가</h3><p>PC용 앱에서 서버 연결 정보를 등록합니다. 이 설정은 최초 한 번만 진행하면 됩니다.</p></div><span className="os-label">CHATGPT APP</span></div>
