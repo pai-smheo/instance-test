@@ -101,7 +101,7 @@ function App() {
                   <p className="step-line"><b>3</b> 접속 안내 메일에 기재된 <strong>③ 서버 등록 + SSH 접속</strong> 명령 전체를 붙여넣은 뒤 Enter 키를 누릅니다. 최초 연결 시 확인 메시지가 표시되면 <code>yes</code>를 입력합니다.</p>
                   <div className="inline-terminal"><span>PS C:\Users\me&gt;</span> ssh 내-서버-별칭 <small>← 메일에 기재된 서버 별칭으로 바꿔 입력</small></div>
                 </div>
-                <div className="card-footnote"><span>✓</span> <code>Welcome to Ubuntu</code>와 <code>ubuntu@…</code> 프롬프트가 표시되면 접속된 것입니다.</div>
+                <div className="card-footnote"><span>✓</span><span className="footnote-text">터미널에 <code>Welcome to Ubuntu</code>와 <code>ubuntu@…</code> 프롬프트가 표시되면 접속이 완료된 것입니다.</span></div>
               </article>
               <article className="instruction-card compact-card">
                 <div className="instruction-heading"><span className="step-badge">B</span><div><h3>Mac 환경 접속</h3><p>터미널 앱에서 접속 안내 메일의 Mac용 명령을 사용합니다.</p></div><span className="os-label">MACOS</span></div>
