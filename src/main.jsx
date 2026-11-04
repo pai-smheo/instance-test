@@ -198,7 +198,7 @@ export default defineConfig({
           <div className="finish-mark" aria-hidden="true"><span>SSH</span><i>→</i><span>CODE</span><i>→</i><span>SHIP</span></div>
         </section>
       </main>
-      <footer className="site-footer"><a className="brand footer-brand" href="#top"><span className="brand-mark"><i /><i /><i /></span>devstream</a><a href="#top">페이지 맨 위로 ↑</a></footer>
+      <footer className="site-footer"><a className="brand footer-brand" href="#top"><span className="brand-mark"><i /><i /><i /></span>devstream</a></footer>
     </>
   )
 }
