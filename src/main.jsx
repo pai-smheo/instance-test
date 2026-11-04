@@ -182,7 +182,7 @@ function App() {
 
         <section className="finish-section">
           <div className="finish-orbit orbit-a" /><div className="finish-orbit orbit-b" />
-          <div className="finish-inner"><div className="finish-kicker"><span /> READY TO BUILD</div><h2>이제 서버가<br /><em>내 작업 공간</em>입니다.</h2><p>Codex로 만들고, GitHub에 저장하고,<br />필요한 앱은 포트를 열어 팀과 공유하세요.</p><div className="finish-actions"><a href="#connect" className="finish-button">처음부터 다시 보기 <span>↑</span></a><a href={docs} target="_blank" rel="noreferrer" className="finish-docs">Devstream 전체 문서 ↗</a></div></div>
+          <div className="finish-inner"><div className="finish-kicker"><span /> READY TO BUILD</div><h2>이제 서버가<br /><em>내 작업 공간</em>입니다.</h2><p>Codex로 만들고, GitHub에 저장하고,<br />필요한 앱은 포트를 열어 팀과 공유하세요.</p><div className="finish-actions"><a href="#connect" className="finish-button">처음부터 다시 보기 <span>↑</span></a></div></div>
           <div className="finish-mark" aria-hidden="true"><span>SSH</span><i>→</i><span>CODE</span><i>→</i><span>SHIP</span></div>
         </section>
       </main>
