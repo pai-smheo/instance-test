@@ -53,7 +53,6 @@ function App() {
           <div className="hero-copy">
             <h1>개발 인스턴스<br /><em>Codex·GitHub 연동 안내</em></h1>
             <p className="hero-lede">SSH 접속부터 GitHub 저장소 연동, 웹 애플리케이션 공개까지 초기 설정 절차를 안내합니다.</p>
-            <a className="primary-button" href="#connect">설정 안내 보기 <span>↓</span></a>
           </div>
           <div className="hero-art" aria-label="SSH 연결 상태 예시">
             <div className="terminal-window">
