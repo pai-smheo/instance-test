@@ -133,6 +133,14 @@
   background: #e5f1e3;
 }
 
+.current-site-card {
+  padding: 15px;
+}
+
+.current-site-card .current-site-example {
+  margin-top: 0;
+}
+
 .current-site-label {
   display: block;
   margin-bottom: 7px;
