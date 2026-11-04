@@ -80,9 +80,9 @@ function App() {
         <section className="prep section-wrap">
           <div className="prep-heading"><span className="mini-label">먼저 준비해 주세요</span><h2>접속에 필요한 것, 세 가지</h2></div>
           <div className="prep-items">
-            <article className="prep-item"><span className="prep-no">01</span><div><b>서버 접속 안내 메일</b><p>서버 별칭과 접속 명령 확인</p></div><span className="prep-arrow">↗</span></article>
-            <article className="prep-item"><span className="prep-no">02</span><div><b>PEM 키 파일</b><p>메일 첨부 파일을 내 컴퓨터에 저장</p></div><span className="prep-arrow">↗</span></article>
-            <article className="prep-item"><span className="prep-no">03</span><div><b>ChatGPT 계정</b><p>Codex 로그인과 앱 연결에 사용</p></div><span className="prep-arrow">↗</span></article>
+            <article className="prep-item"><span className="prep-no">01</span><div><b>서버 접속 안내 메일</b><p>서버 별칭과 접속 명령 확인</p></div></article>
+            <article className="prep-item"><span className="prep-no">02</span><div><b>PEM 키 파일</b><p>메일 첨부 파일을 내 컴퓨터에 저장</p></div></article>
+            <article className="prep-item"><span className="prep-no">03</span><div><b>ChatGPT 계정</b><p>Codex 로그인과 앱 연결에 사용</p></div></article>
           </div>
         </section>
 
