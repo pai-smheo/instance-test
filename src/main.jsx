@@ -212,7 +212,7 @@ Vite 설정: base: '/i/zYusWVViM9PWkQEw/'
           <div className="finish-mark" aria-hidden="true"><span>SSH</span><i>→</i><span>CODE</span><i>→</i><span>SHIP</span></div>
         </section>
       </main>
-      <footer className="site-footer"><a className="brand footer-brand" href="#top"><span className="brand-mark"><i /><i /><i /></span>devstream</a><span>인스턴스 첫 설정 가이드 · 내용은 <a href={docs} target="_blank" rel="noreferrer">Devstream 문서</a>와 제공된 접속 안내를 바탕으로 작성했습니다.</span><a href="#top">BACK TO TOP ↑</a></footer>
+      <footer className="site-footer"><a className="brand footer-brand" href="#top"><span className="brand-mark"><i /><i /><i /></span>devstream</a><a href="#top">BACK TO TOP ↑</a></footer>
     </>
   )
 }
