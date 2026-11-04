@@ -89,7 +89,7 @@ function App() {
 
         <section id="connect" className="guide-section connect-section">
           <div className="section-wrap guide-grid">
-            <div className="guide-aside"><SectionTitle number="01" label="CONNECT" title="SSH로 서버에 접속합니다" items={["SSH는 원격 서버에 안전하게 접속하는 방식입니다. 접속 안내 메일에 기재된 정보를 사용해 주세요.", "PEM 키는 서버 접속을 위한 인증 정보입니다. 팀원 외에는 공유하지 마시고, 분실한 경우 운영진에게 재발급을 요청해 주세요."]} /></div>
+            <div className="guide-aside"><SectionTitle number="01" label="CONNECT" title="SSH 서버 접속" items={["SSH는 원격 서버에 안전하게 접속하는 방식입니다. 접속 안내 메일에 기재된 정보를 사용해 주세요.", "PEM 키는 서버 접속을 위한 인증 정보입니다. 팀원 외에는 공유하지 마시고, 분실한 경우 운영진에게 재발급을 요청해 주세요."]} /></div>
             <div className="guide-content">
               <article className="instruction-card">
                 <div className="instruction-heading"><span className="step-badge">A</span><div><h3>Windows 환경 접속</h3><p>PowerShell을 열고 다운로드 폴더에서 다음 절차를 진행합니다.</p></div><span className="os-label">WINDOWS</span></div>
@@ -116,7 +116,7 @@ function App() {
 
         <section id="codex" className="guide-section codex-section">
           <div className="section-wrap guide-grid">
-            <div className="guide-aside"><SectionTitle number="02" label="CODEX" title="Codex를 설치하고 연결합니다" items={["Codex가 서버의 작업 폴더에서 파일을 읽고 수정할 수 있도록 설정합니다.", "서버의 Codex CLI와 ChatGPT 데스크톱 앱에는 동일한 ChatGPT 계정으로 로그인해 주세요."]} /></div>
+            <div className="guide-aside"><SectionTitle number="02" label="CODEX" title="Codex 설치 및 연결" items={["Codex가 서버의 작업 폴더에서 파일을 읽고 수정할 수 있도록 설정합니다.", "서버의 Codex CLI와 ChatGPT 데스크톱 앱에는 동일한 ChatGPT 계정으로 로그인해 주세요."]} /></div>
             <div className="guide-content">
               <article className="instruction-card codex-card">
                 <div className="instruction-heading"><span className="step-badge step-violet">01</span><div><h3>서버에 Codex CLI를 설치합니다</h3><p>SSH로 접속한 서버 터미널에서 실행합니다.</p></div><span className="time-label">예상 소요: 1분</span></div>
@@ -137,7 +137,7 @@ function App() {
 
         <section id="github" className="guide-section github-section">
           <div className="section-wrap guide-grid">
-            <div className="guide-aside"><SectionTitle number="03" label="GIT + GITHUB" title="저장소를 연결하고 변경 사항을 게시합니다" items={["Git은 파일 변경 이력을 관리하고, GitHub는 이를 온라인에 저장하고 공유하는 서비스입니다.", <>각 인스턴스의 영구 저장소는 <code>/data</code>에 마운트됩니다. 저장소는 이 경로 아래에 clone해 주세요.</>]} /></div>
+            <div className="guide-aside"><SectionTitle number="03" label="GIT + GITHUB" title="GitHub 저장소 연동 및 변경 사항 게시" items={["Git은 파일 변경 이력을 관리하고, GitHub는 이를 온라인에 저장하고 공유하는 서비스입니다.", <>각 인스턴스의 영구 저장소는 <code>/data</code>에 마운트됩니다. 저장소는 이 경로 아래에 clone해 주세요.</>]} /></div>
             <div className="guide-content">
               <article className="instruction-card github-card">
                 <div className="instruction-heading"><span className="step-badge step-green">01</span><div><h3>Git과 GitHub CLI 설치</h3><p>SSH 접속 후 서버에서 실행합니다.</p></div><span className="os-label">UBUNTU</span></div>
@@ -161,7 +161,7 @@ function App() {
 
         <section id="ports" className="guide-section port-section">
           <div className="section-wrap guide-grid">
-            <div className="guide-aside"><SectionTitle number="04" label="NETWORK" title="추가 포트를 요청하고 도메인으로 연결합니다" items={["Streamlit은 기본 포트를 사용할 수 있습니다. 추가 포트가 필요한 경우 멘토에게 요청해 주세요.", <>앱 서버가 <code>0.0.0.0</code>에 바인딩되어야 외부 요청을 받을 수 있습니다.</>]} /></div>
+            <div className="guide-aside"><SectionTitle number="04" label="NETWORK" title="추가 포트 요청 및 도메인 연결" items={["Streamlit은 기본 포트를 사용할 수 있습니다. 추가 포트가 필요한 경우 멘토에게 요청해 주세요.", <>앱 서버가 <code>0.0.0.0</code>에 바인딩되어야 외부 요청을 받을 수 있습니다.</>]} /></div>
             <div className="guide-content">
               <article className="instruction-card port-card">
                 <div className="instruction-heading"><span className="step-badge step-orange">01</span><div><h3>Streamlit은 8501 포트를 사용합니다</h3><p>Streamlit용 8501 포트는 모든 인스턴스에서 개방되어 있습니다.</p></div><span className="open-label">개방됨</span></div>
