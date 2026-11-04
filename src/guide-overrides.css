@@ -322,11 +322,11 @@ body { color: var(--pai-color-fg-default); background: var(--pai-color-bg-canvas
 .step-line > b { color: var(--pai-color-accent-fill); }
 .step-line strong { color: var(--pai-color-fg-default); }
 .step-line code, .instruction-body code, .app-steps code, .card-footnote code, .plain-note code, .port-settings code, .alert-box code { font-size: 12px; }
-.code-block { gap: 16px; min-height: 48px; border-radius: var(--pai-radius-md); border-color: var(--pai-color-border-strong); background: #212121; color: #fff; }
+.code-block { gap: 16px; min-height: 48px; border-radius: var(--pai-radius-md); border-color: #52617a; background: var(--pai-color-bg-inverse); color: #fff; }
 .code-block code { background: transparent; color: #fff; font-size: 14px; }
 .code-block button { min-width: 56px; border-color: #606166; border-radius: var(--pai-radius-sm); color: #1a1a1a; font-size: 12px; }
 .code-block button:hover { border-color: var(--pai-color-accent-fill); background: var(--pai-color-accent-fill); color: #fff; }
-.inline-terminal { border-radius: var(--pai-radius-md); background: #212121; color: #fff; font-size: 12px; }
+.inline-terminal { border-radius: var(--pai-radius-md); background: var(--pai-color-bg-inverse); color: #fff; font-size: 12px; }
 .inline-terminal > span { color: #d8dade; }
 .inline-terminal small { font-size: 12px; }
 .card-footnote { gap: 12px; border-color: var(--pai-color-border-default); color: var(--pai-color-fg-muted); font-size: 14px; line-height: 1.6; }
@@ -360,9 +360,9 @@ body { color: var(--pai-color-fg-default); background: var(--pai-color-bg-canvas
 .current-site-example > a { color: var(--pai-color-fg-default); font-size: 12px; }
 .current-site-example > div small { color: var(--pai-color-fg-muted); font-size: 12px; }
 .current-site-example > div code { background: var(--pai-color-bg-surface); color: var(--pai-color-fg-default); font-size: 11px; }
-.current-site-example > .file-sample { border-color: #333; }
-.file-sample-head { background: #333; color: #fff; font-size: 12px; }
-.current-site-example pre { background: #212121; color: #fff; font-size: 11px; }
+.current-site-example > .file-sample { border-color: #52617a; }
+.file-sample-head { background: #3a4962; color: #fff; font-size: 12px; }
+.current-site-example pre { background: var(--pai-color-bg-inverse); color: #fff; font-size: 11px; }
 .base-examples { gap: 8px; }
 .base-examples a { gap: 8px 12px; padding: 12px; border-color: var(--pai-color-border-default); border-radius: var(--pai-radius-sm); background: var(--pai-color-bg-surface); }
 .base-examples a:hover { border-color: var(--pai-color-border-strong); background: var(--pai-color-bg-subtle); }
@@ -426,8 +426,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-
 .float-icon, .git-icon { background: var(--pai-color-bg-subtle); color: var(--pai-color-accent-fill); }
 .git-icon { border: 1px solid var(--pai-color-border-default); }
 .port-flow > div > span { background: var(--pai-color-bg-subtle); color: var(--pai-color-accent-fill); }
-.port-console { background: #212121; color: #fff; }
-.port-console > div { background: #333; }
+.port-console { background: var(--pai-color-bg-inverse); color: #fff; }
+.port-console > div { background: #3a4962; }
 .port-console p b, .port-console small, .console-foot { color: #d8dade; }
 .port-console p, .port-console small, .console-foot { font-size: 12px; }
 .port-console p strong { color: #fff; }
