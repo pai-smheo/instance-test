@@ -167,9 +167,19 @@ function App() {
                 <div className="port-console"><div><span className="console-dot" /><span className="console-dot" /><span className="console-dot" /><small>기본 개방 포트</small></div><p><b>Streamlit</b><strong>0.0.0.0:8501</strong></p><span className="console-foot">사전 제공받은 8501용 도메인을 적용하여 실행하면 가능해요.</span></div>
                 <div className="streamlit-run"><span>실행 예시 · 발급받은 base URL 경로를 넣어 주세요</span><CopyCode>streamlit run app.py --server.port 8501 --server.baseUrlPath "/&lt;8501-base-url-path&gt;"</CopyCode><small>전체 도메인 주소가 아닌, 도메인에 연결된 base URL 경로를 설정합니다.</small></div>
               </article>
-              <article className="instruction-card port-card current-site-card"><div className="current-site-example"><span className="current-site-label">현재 이 사이트의 실제 설정 · React + Vite · 포트 3000</span><a href="https://devopen.jntp-ax.or.kr/i/zYusWVViM9PWkQEw/" target="_blank" rel="noreferrer">https://devopen.jntp-ax.or.kr/i/zYusWVViM9PWkQEw/ <span>↗</span></a><div><small>도메인</small><code>devopen.jntp-ax.or.kr</code><small>base path</small><code>/i/zYusWVViM9PWkQEw/</code></div><pre>React 실행 명령: npm run dev
-Vite 설정: base: '/i/zYusWVViM9PWkQEw/'
-서버 설정: host '0.0.0.0', port 3000</pre></div></article>
+              <article className="instruction-card port-card current-site-card"><div className="current-site-example"><span className="current-site-label">현재 이 사이트의 실제 설정 · React + Vite · 포트 3000</span><a href="https://devopen.jntp-ax.or.kr/i/zYusWVViM9PWkQEw/" target="_blank" rel="noreferrer">https://devopen.jntp-ax.or.kr/i/zYusWVViM9PWkQEw/ <span>↗</span></a><div><small>도메인</small><code>devopen.jntp-ax.or.kr</code><small>base path</small><code>/i/zYusWVViM9PWkQEw/</code></div><div className="file-sample"><div className="file-sample-head"><span /> vite.config.js</div><pre>{`import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  base: '/i/zYusWVViM9PWkQEw/',
+  plugins: [react()],
+  server: {
+    host: '0.0.0.0',
+    port: 3000,
+    strictPort: true,
+    allowedHosts: ['devopen.jntp-ax.or.kr'],
+  },
+})`}</pre></div><div className="run-command"><small>실행 명령</small><CopyCode>npm run dev</CopyCode></div></div></article>
               <article className="instruction-card port-card">
                 <div className="instruction-heading"><span className="step-badge step-orange">02</span><div><h3>다른 앱은 허성민 멘토에게 요청</h3><p>포트를 직접 추가하지 말고, 필요한 정보를 멘토에게 전달하세요.</p></div></div>
                 <div className="port-flow"><div><span>1</span><b>인스턴스 확인</b><small>이름 또는 ID</small></div><i>→</i><div><span>2</span><b>포트 전달</b><small>예: 3000</small></div><i>→</i><div><span>3</span><b>도메인 받기</b><small>허성민 멘토에게</small></div><i>→</i><div><span>4</span><b>앱에 연결</b><small>도메인 + base URL</small></div></div>

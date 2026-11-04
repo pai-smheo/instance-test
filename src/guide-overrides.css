@@ -193,6 +193,47 @@
   font: 8px/1.6 var(--mono);
 }
 
+.current-site-example > .file-sample {
+  display: block;
+  margin-top: 9px;
+  overflow: hidden;
+  border: 1px solid #35614d;
+  border-radius: 5px;
+  background: #26483a;
+}
+
+.file-sample-head {
+  padding: 7px 10px;
+  background: #345844;
+  color: #d8ebd5;
+  font: 8px var(--mono);
+}
+
+.file-sample-head > span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 6px;
+  border-radius: 2px;
+  background: #b9e782;
+}
+
+.file-sample > pre {
+  margin: 0;
+  border-radius: 0;
+  background: #26483a;
+}
+
+.run-command {
+  margin-top: 9px;
+}
+
+.current-site-example .run-command > small {
+  color: #547458;
+  font-size: 8px;
+  font-weight: 700;
+}
+
 .base-examples {
   display: grid;
   grid-template-columns: 1fr 1fr;
