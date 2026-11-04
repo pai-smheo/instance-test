@@ -295,12 +295,13 @@
   .instruction-heading h3 { overflow-wrap: anywhere; }
   .os-label, .time-label { max-width: 72px; white-space: normal; text-align: center; line-height: 1.4; }
 
-  .device-flow { flex-direction: column; align-items: stretch; gap: 7px; }
-  .device-flow > div { width: 100%; }
-  .device-flow > i { align-self: center; transform: rotate(90deg); line-height: 1; }
+  .device-flow { flex-direction: column; align-items: stretch; gap: 9px; }
+  .device-flow > div { width: 100%; display: grid; grid-template-columns: 20px minmax(0, 1fr); column-gap: 8px; align-items: center; }
+  .device-flow > div > span { grid-row: span 2; }
+  .device-flow > i { display: none; }
 
-  .port-flow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-  .port-flow > div { min-width: 0; display: grid; grid-template-columns: 20px minmax(0, 1fr); align-items: start; column-gap: 7px; }
+  .port-flow { display: grid; grid-template-columns: minmax(0, 1fr); gap: 9px; }
+  .port-flow > div { min-width: 0; display: grid; grid-template-columns: 20px minmax(0, 1fr); align-items: start; column-gap: 7px; padding: 8px 9px; border: 1px solid #eee7dc; border-radius: 5px; background: #fff; }
   .port-flow > div > span { grid-row: span 2; }
   .port-flow b, .port-flow small { overflow-wrap: anywhere; }
   .port-flow > i { display: none; }
