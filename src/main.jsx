@@ -75,6 +75,10 @@ function App() {
           <div className="hero-bottom"><span>01 — CONNECT</span><span>02 — BUILD</span><span>03 — SHARE</span><span>04 — PUBLISH</span><div className="hero-progress"><i /></div></div>
         </section>
 
+        <section className="project-note section-wrap" aria-label="제작 정보">
+          <p>이 웹은 Devstream 인스턴스에서 Codex와 함께 제작했습니다. 코드는 <a href="https://github.com/pai-smheo/instance-test" target="_blank" rel="noreferrer">GitHub 저장소</a>에서 확인하실 수 있습니다.</p>
+        </section>
+
         <section className="prep section-wrap">
           <div className="prep-heading"><span className="mini-label">사전 준비 사항</span><h2>접속 전 준비 항목</h2></div>
           <div className="prep-items">
