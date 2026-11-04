@@ -51,11 +51,9 @@ function App() {
         <section className="hero">
           <div className="hero-grid" aria-hidden="true" />
           <div className="hero-copy">
-            <div className="eyebrow"><span className="eyebrow-dot" /> 인스턴스 초기 설정 안내 <span className="eyebrow-line" /></div>
             <h1>개발 인스턴스<br /><em>Codex·GitHub 연동 안내</em></h1>
             <p className="hero-lede">SSH 접속부터 GitHub 저장소 연동, 웹 애플리케이션 공개까지 초기 설정 절차를 안내합니다.</p>
             <a className="primary-button" href="#connect">설정 안내 보기 <span>↓</span></a>
-            <div className="hero-meta"><span className="meta-lock">✳</span> 개인 키 인증을 사용합니다 <span className="meta-sep">·</span> 예상 소요 시간: 약 10분</div>
           </div>
           <div className="hero-art" aria-label="SSH 연결 상태 예시">
             <div className="terminal-window">
@@ -80,7 +78,7 @@ function App() {
         </section>
 
         <section className="prep section-wrap">
-          <div className="prep-heading"><span className="mini-label">사전 준비 사항</span><h2>접속 전 준비 항목</h2></div>
+          <div className="prep-heading"><h2>접속 전 준비 항목</h2></div>
           <div className="prep-items">
             <article className="prep-item"><span className="prep-no">01</span><div><b>서버 접속 안내 메일</b><p>서버 별칭 및 접속 명령 확인</p></div></article>
             <article className="prep-item"><span className="prep-no">02</span><div><b>PEM 키 파일</b><p>메일에 첨부된 PEM 키 파일 저장</p></div></article>
